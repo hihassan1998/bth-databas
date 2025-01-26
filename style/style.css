@@ -25,6 +25,7 @@ main {
     /* flex-grow: 1; */
 
 }
+
 .content {
     /* flex-grow: 1; */
     text-align: left;
@@ -38,6 +39,7 @@ main {
     box-sizing: border-box;
     /* overflow: auto */
 }
+
 /* navbar stylings start*/
 nav {
     padding-top: 15px;
@@ -56,7 +58,7 @@ nav ul {
     overflow: hidden;
     /* background-color: #333; */
     margin-bottom: 25px;
-
+    border-bottom: 10px solid #f6c692;
 }
 
 nav li {
@@ -74,6 +76,19 @@ nav li a {
 nav li a:hover:not(.active) {
     background-color: #111;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 4px solid #333;
+    padding: 40px;
+    background-color: #333;
+    background-color: #f6c692;
+    color: #333;
+    font-size: 1.5rem;
+
+}
+
 /* navbar stylings end */
 
 @media (max-width: 768px) {
@@ -91,15 +106,16 @@ nav li a:hover:not(.active) {
     .res-desk-mob {
         flex-direction: column !important;
     }
+
     .active {
-    border-radius: 25px;
-    /* background-color: #ffedda; */
-    background-color: #f6c692;
-    color: #000;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
+        border-radius: 25px;
+        /* background-color: #ffedda; */
+        background-color: #f6c692;
+        color: #000;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
 }
 
 .res-desk-mob {
@@ -137,16 +153,20 @@ article {
     color: #000;
     font-size: 1.5rem;
 }
+
 /* font stylings start*/
 p.p1 {
     font-size: 2.5rem;
 }
+
 p.p2 {
     font-size: 1.75rem;
 }
+
 p.p3 {
     font-size: 1.5rem;
 }
+
 /* font stylings end*/
 
 .smaller {
