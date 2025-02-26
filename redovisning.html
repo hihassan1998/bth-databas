@@ -8,6 +8,11 @@
     <link rel="shortcut icon" href="img/hh_logo_b.png">
 
 </head>
+<style>
+    h1 {
+        justify-self: left;
+    }
+</style>
 
 <body>
 
@@ -38,7 +43,8 @@
         <header>
             <h1>Redovisning av kursmoment i kursen Databasteknologier för webben</h1>
         </header>
-
+        <br>
+        <hr><br>
         <section>
             <h2>Kmom01</h2>
             <p><br>
@@ -60,44 +66,203 @@
                 shell-script för att återställa databasen, då det gav samma resultat som reset-part-1.sql-skriptet.
                 <br>
                 <br>
-                SQL:s grundstruktur har hållit sig konsekvent, vilket gör det enkelt och effektivt för databashantering. Till skillnad från språk som JavaScript och PHP, som har utvecklats mycket, har SQL bevarat sin enkelhet. Det är också enklare att hantera och visa data med SQL, särskilt när det gäller sortering och uppdatering. Till exempel är det mer strukturerat än att manipulera JSON med JavaScript, vilket kräver fler steg för parsing och uppdatering. SQL:s inbyggda funktioner gör det till ett bättre val för datamanipulering.
+                SQL:s grundstruktur har hållit sig konsekvent, vilket gör det enkelt och effektivt för databashantering.
+                Till skillnad från språk som JavaScript och PHP, som har utvecklats mycket, har SQL bevarat sin
+                enkelhet. Det är också enklare att hantera och visa data med SQL, särskilt när det gäller sortering och
+                uppdatering. Till exempel är det mer strukturerat än att manipulera JSON med JavaScript, vilket kräver
+                fler steg för parsing och uppdatering. SQL:s inbyggda funktioner gör det till ett bättre val för
+                datamanipulering.
                 <br>
                 <br>
                 <strong>
                     Min till för detta kmom:
-                </strong> Att installera MariaDB och MySQL Desktop Client var det mest utmanande och samtidigt det mest lärorika i
+                </strong> Att installera MariaDB och MySQL Desktop Client var det mest utmanande och samtidigt det mest
+                lärorika i
                 detta kmom. Det var spännande att lära sig koppla en databasserver som körs lokalt i Windows mot
                 WSL-miljön. Att använda MySQL CLI är något nytt för mig, och jag kommer att utforska fler funktioner som
                 finns i Workbench under kursens gång.
-                
+
             </p>
             <br>
         </section>
-
+        <br>
+        <hr><br>
         <section>
             <h2>Kmom02</h2>
-            <p>Här är redovisningstexten</p>
-        </section>
+            <br>
+            <p>
+                Det har varit ganska enkelt att förstå och skriva SQL-satser hittills, men när vi kom in på UNION och
+                JOIN började det kännas lite tuffare. Man behöver ha full koll på databasen för att kunna skriva
+                korrekta SQL-satser, och jag har börjat få fler felmeddelanden nu. När det känns tungt med långa satser
+                är introduktionen till vyer något som känns som "a light at the end of the tunnel" och gör det lättare
+                att hantera stora SQL-satser.
+            </p>
+            <br>
+            <p>
+                Jag har jobbat lite med JavaScript SSR i Next.js-ramverket och skapat webbapplikationer, vilket har
+                gjort det lättare att förstå projektet med terminalbaserat byggande. Att arbeta med serversidan i
+                JavaScript känns intuitivt, särskilt eftersom jag redan har erfarenhet av frontend-utveckling med
+                JavaScript.
+            </p>
+            <br>
+            <p>
+                Asynkron programmering är väldigt bra eftersom man inte behöver vänta på att koden exekveras rad för
+                rad. Exekveringsflödet i asynkron programmering gör att om en uppgift tar lång tid kan andra delar av
+                programmet fortsätta att köras, vilket förhindrar att någon operation blockeras. Dessutom blir koden
+                mindre beroende av föregående operationer, om de inte är direkt kopplade. Det känns bra att använda
+                async/await eftersom det minskar risken för att appen kraschar och att användaren får många
+                felmeddelanden. Dessutom blir koden mer strukturerad och lättare att underhålla.
+            </p>
+            <br>
+            <p>
+                Det var enkelt med hjälp av övningsuppgifterna. Det var också lätt att komma igång med Node.js och
+                JavaScript eftersom jag redan har läst en kurs i JavaScript under läsperiod 1. I början fastnade jag
+                dock vid konfigurationen av Node.js med databasen eftersom jag försökte använda de inloggningsuppgifter
+                som fanns i guiden. När jag upptäckte felet och istället skrev in mina egna inloggningsuppgifter i
+                config.json, fungerade allt smidigt och jag kunde få respons från databasen.
 
+            </p>
+            <br>
+
+            <p>
+                <strong>
+                    Min TIL för detta kmom: </strong>är att jag har lärt mig hur man kopplar en MariaDB-server till
+                Node-terminalen med hjälp av JavaScript,
+                vilket har varit lärorikt. Genom övningsuppgifterna har jag redan lärt mig mer än förväntat. Dessutom
+                har jag
+                fått en bättre förståelse för hur JOIN och UNION fungerar i SQL, vilket är en viktig del för att kunna
+                skriva mer avancerade SQL-frågor.
+            </p>
+        </section>
+        <br>
+        <hr>
+        <br>
         <section>
             <h2>Kmom03</h2>
-            <p>Här är redovisningstexten</p>
-        </section>
+            <br>
+            <p>
+                Det var väldigt kul att kunna jobba mer med ett menybaserat program i detta kmom, då man har tydliga val
+                som användaren kan göra för att utnyttja appens fulla potential. Det var också intressant att kunna
+                koppla upp sig mot servern lokalt, och det var givande att skriva SQL-satser som ofta krävde färre rader
+                kod jämfört med när vi jobbade med vanlig JavaScript för att söka i databasen, och sedan visa resultaten
+                i terminalen med hjälp av JavaScript.
+                Att programmera ett sådant program kan vara utmanande, särskilt om det handlar om en stor applikation
+                med en omfattande databas. Det känns alltid tillfredsställande när man skapar olika moduler och får dem
+                att fungera tillsammans för att få applikationen att koppla upp sig mot databasen och fungera som tänkt.
+                I början var det lite svårt när jag blandade syntaxen för ES-moduler och vanliga JavaScript-moduler, men
+                genom att hantera fel och felsökning i terminalen kunde jag komma på rätt spår.
+                <br><br>
+                Jag tycker att min kod har en välstrukturerad uppbyggnad med modulisering, vilket gör det lätt för andra
+                att förstå. Till exempel har jag skapat en modul för menyn som importeras i index.js för att visa menyn.
+                Jag har också en modul, handleCases, som hanterar användarens valda kommandon, en modul för dynamisk
+                tabellskapande, en modul för att hämta och visa revisionsdata, samt en modul för att hämta och uppdatera
+                lärare.
 
+                Jag anser att jag skulle kunna ha delat upp koden ännu mer i mindre moduler och gjort index.js ännu mer
+                kompakt för att göra applikationen mer skalbar, men jag är nöjd med resultatet hittills.
+
+                <br><br>
+                När det gäller det aktuella stycket i guiden om till exempel outer joins och subqueries, tycker jag att
+                summeringen av outer joins var den mest uppskattade delen av guiden. Jag gillade exemplen eftersom de
+                var baserade på den databas vi faktiskt jobbar med, vilket gjorde det mycket roligare att arbeta med
+                denna guide, jämfört med att använda fiktiva databaser och SQL-satser som i övriga dokumentationer på
+                nätet.
+
+                Det känns som att subqueries kan användas för att skapa kortare och mer logiska SQL-satser för att hämta
+                data. Det var roligt att arbeta med subqueries, då de påminner om nesting. men det är mer kostsam på
+                prestande med långa svåra subqueries då är Outer joins som kan hjälpa för att söka på information som är
+                har minsta relation med varandra
+
+                <br><br>
+
+                Att jobba med ER-modellering var en bra övning för att förstå och visualisera hur olika enheter i en
+                databas är relaterade. Det var nyttigt att fokusera på att designa entiteter och deras relationer innan
+                själva implementeringen. Dessutom var det lärorikt att föreställa sig hela dataflödet och sedan skissa
+                det på papper, vilket gav en tydlig bild av den övergripande strukturen. En utmaning var att säkerställa
+                att alla relationer var logiska och att få med de mest relevanta attributen, samtidigt som man släppte
+                de som inte var nödvändiga eller som inte var korrekt definierade, för att undvika onödiga kopplingar.
+                <br><br>
+                En extra svårighet jag stötte på i början var att arbeta i WSL, vilket var lite utmanande till en
+                början. Men nu, när jag nästan har kommit halvvägs genom kursen, finner jag bugforum och
+                felsökningsforum väldigt användbara. Jag vill också nämna att jag stötte på många fel när jag försökte
+                få reset-part-3.sql att fungera på mitt system, men jag löste alla felmeddelanden jag fick.
+                <br><br>
+
+                <strong>Min TIL för detta kmom:</strong> är att jag har lärt mig hur viktigt felhantering är i
+                Node.js-terminalapplikationer och hur man kan lösa det på ett effektivt sätt. Dessutom var det roligt
+                att arbeta med ER-modelleringen också.
+
+            </p>
+        </section>
+        <br>
+        <hr><br>
         <section>
             <h2>Kmom04</h2>
-            <p>Här är redovisningstexten</p>
+            <br>
+            <p>
+                Transaktioner kan vara en utmaning i början, men när man förstår hur de säkerställer dataintegritet och
+                hanterar flera samtidiga operationer, blir det lättare att använda dem effektivt. Jag tycker att
+                övningarna med transaktioner var bra, och jämfört med en vanlig UPDATE var det bättre att använda BEGIN
+                TRANSACTION och COMMIT, eftersom det ger bättre kontroll över datan och möjliggör återställning vid fel.
+                Med en vanlig UPDATE kan ändringar direkt påverka databasen utan möjlighet att ångra dem, vilket gör
+                transaktioner till ett säkrare alternativ i mer komplexa scenarion. Däremot lyckades jag inte få
+                ROLLBACK att fungera i detta skede.
+                <br><br>
+
+                Att sätta upp en fullständig utvecklingsstack med Express.js för serverhantering, EJS för rendering av
+                dynamiska sidor och MySQL som databas var ett stort steg inom webbprogrammering, tycker jag. Det var
+                lärorikt att förstå hur dessa teknologier fungerar tillsammans. Även om MEAN-stack (MongoDB, Express,
+                Angular, Node.js) inte är lika populär idag, är MERN-stack (MongoDB, Express, React, Node.js) däremot en
+                viktig teknologi nuförtiden. Denna kurs ger mig kunskaper som jag kan ha nytta av när jag skapar
+                applikationer med MERN-stack, eftersom jag har fått en bättre förståelse för Express och Node.js. EJS
+                kan dessutom på många sätt översättas till React, vilket gör det lättare att övergå till en modern
+                frontend-stack.
+
+                <br><br>
+                Jag lyckades upprätthålla en god kodstruktur för både terminal- och webbklienten. Jag skapade en
+                funktion, transferMoney, som tog in clientType som argument. Om argumentet var "web", fick Adam pengar
+                genom att använda samma funktion i den Express-baserade webbklienten. Om argumentet var "terminal", fick
+                Eva pengar på sitt konto genom att använda transferMoney i terminalmiljön. Detta gjorde att jag kunde
+                återanvända koden effektivt och undvika duplicering.
+                <br><br>
+                Jag tycker att ER-modelleringsuppgiften gick bra. Vi började med konceptuell modellering genom att
+                beskriva databasen i text och skapa ett ER-diagram för att tydliggöra entiteter och relationer. Därefter
+                översatte vi modellen till logisk modellering, där vi definierade primär- och främmande nycklar enligt
+                relationsmodellen. Slutligen implementerade vi fysisk modellering genom att skapa SQL DDL-kod i ddl.sql,
+                samt setup.sql och reset.sql för att hantera databasen. Det stegvisa arbetet säkerställde en stabil och
+                välstrukturerad databas.
+
+                <br><br>
+                Jag tycker att denna kurs har gett mig en mycket bra förståelse för hur man skapar egna databaser samt
+                hur man gör ER-modellering. De 10 stegen från kokboken var lärorika och jag känner att jag har fått en
+                djup förståelse för de grundläggande koncepten som har behandlats i kursen hittills. Det började bli mer
+                intressant när jag fick skapa både terminalprogram och webbapplikationer samtidigt och använda en enda
+                databas för kommunikation mellan båda applikationerna.
+                <br><br>
+                <strong>Min TIL för detta kmom:</strong> är att lära mig att använda samma databas för både en
+                webbapplikation och en terminalapplikation. Att skapa en databas för Buckstart Online eshopen har varit
+                mycket lärorikt. Det har också varit intressant att skriva dry code för båda applikationerna, vilket har
+                gett mig en bättre förståelse för hur dessa system kan integreras och kommunicera med varandra.
+
+
+            </p>
         </section>
+        <br>
+        <hr><br>
 
         <section>
             <h2>Kmom05</h2>
             <p>Här är redovisningstexten</p>
         </section>
+        <br>
+        <hr><br>
 
         <section>
             <h2>Kmom06</h2>
             <p>Här är redovisningstexten</p>
         </section>
+        <br>
+        <hr><br>
 
         <section>
             <h2>Kmom07-10</h2>
