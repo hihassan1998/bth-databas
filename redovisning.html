@@ -253,20 +253,54 @@
         <section>
             <h2>Kmom05</h2>
             <p>
-                Gick det bra att komma igång med lagrade procedurer och triggers?
+                Det gick allmänt bra att komma igång med lagrade procedurer, då det nu känns som att procedurer har mer
+                användning jämfört med vanliga views som vi lärde oss i förra kursmomentet. Att skapa procedurer
+                automatiserar många av de enkla stegen i INSERT, UPDATE och DROP av datainnehåll, vilket annars hade
+                tagit betydligt längre tid att utföra manuellt. Triggers, å andra sidan, var intressanta att lära sig om
+                och att se hur de kan användas för debugging av databasoperationer var mycket lärorikt. Det krävdes dock
+                en hel del inläsning för att förstå syntaxen och implementera båda teknikerna på bästa sätt.
                 <br><br>
-                Hur är din syn på att “programmera” på detta viset i databasen, jämför med traditionell SQL som
-                exponeras i klienten?
+                Att programmera med SQL på detta sätt var bra eftersom det ökade både prestanda och säkerhet genom att
+                låta förfrågningar hanteras direkt i databasen. Detta gör att databaslogiken och webbklientens logik
+                blir mer självständiga. Det skapar också en standard för alla typer av klienter, oavsett vilka
+                teknologier de är byggda med, eftersom de är kopplade till samma databas och därmed följer samma regler.
+                I övrigt var det mer arbete än jag hade förväntat mig under detta kursmoment, men jag tror att det är
+                värt det. Att kunna arbeta med samma databas från två olika klienter var intressant, och att skriva
+                vissa funktioner som fungerade både för webbklienten och CLI:et var lärorikt.
                 <br><br>
-                Skriv ett kort stycke (2-5 meningar) om lagrade procedurer och om triggers där du förklarar begreppen
-                (fördel, nackdel, användningsområde) för en som inte är insatt.
+                Lagrade procedurer är en samling SQL-satser som sparas i databasen för att automatisera olika uppgifter.
+                Genom att anropa en lagrad procedur kan flera operationer utföras, vilket kan minska antalet separata
+                SQL-förfrågningar.
+                En fördel med lagrade procedurer är att de effektiviserar uppgifter som annars skulle behöva skickas
+                från en klient. Dokumentationen i databasen gör att klientprogrammering blir mer självständig och mindre
+                beroende av djup förståelse av databasen – det räcker med dokumentation för att möjliggöra modulärt
+                arbete.
+                <br>
+                En nackdel är att de kan göra databasen mer komplex, och därför krävs bättre dokumentation för att
+                nyanställda eller personer som är nya i projektet ska kunna förstå affärslogiken.
+                <br>
+                Triggers, å andra sidan, fungerar precis som namnet antyder – när en fördefinierad händelse inträffar i
+                databasen, aktiveras triggern och kan exempelvis logga ändringar. En fördel med triggers är att de kan
+                skapa en historik av händelser, vilket kan vara bra för dataintegritet. Däremot kan de öka komplexiteten
+                och minska flexibiliteten i systemet.
                 <br><br>
                 Något att kommentera kring arbetet med att komma igång och implementera CRUD i webbklienten?
                 <br><br>
                 Berätta om hur det gick att utföra uppgiften med din Eshop, berätta även vem du jobbade i grupp med, om
                 någon?
+
                 <br><br>
-                <strong>Min TIL för detta kmom:</strong> är att
+
+                <strong>Min TIL för detta kmom:</strong> är att lära mig användning och skapande av procedurer, vilket
+                underlättar arbetet och gör det mer intressant att arbeta med SQL, eftersom man kan programmera
+                SQL-satser med logik.
+                <br>
+                Det var en utmaning att behöva göra ändringar i tabbeler som jag hade skapat under den konceptuella
+                modelleringsfasen av databasen. Dock visade sig ändringarna vara mindre komplexa än vad jag hade
+                förväntat mig under planeringen av databasen.
+                <br>
+                Detta kursmoment har varit ett av de mest intressanta, då vi fick arbeta med CRUD och lära oss mer om
+                hur en databas kan användas av flera klienter.
             </p>
         </section>
         <br>
