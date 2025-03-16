@@ -324,7 +324,52 @@
 
         <section>
             <h2>Kmom06</h2>
-            <p>Här är redovisningstexten</p>
+            <p>
+                Index i databassammanhang fungerar som en innehållsförteckning i en bok och pekar ut var specifik data
+                finns, vilket gör att databasen kan söka direkt istället för att skanna hela tabellen.Index gör så att
+                sökningar går snabbare genom att minska hur många rader som måste kollas igenom. De kan läggas på en
+                eller flera kolumner och hjälper till att göra databasen snabbare och mer effektiv, särskilt när det
+                finns mycket data.
+                <br>
+                <br>
+                Jag tillförde ett index på kolumnen raderad_at i tabellen orders för att optimera sökningar där denna
+                kolumn används, vilket minskar tiden för att hämta data från stora tabeller. Detta index används till
+                exempel i ShowOrdersOverview-proceduren för att effektivt filtrera bort raderade ordrar. Inga
+                ytterligare index skapades, eftersom alla tabeller och SELECT-satser redan använder primärnycklar och
+                främmande nycklar, vilket gör att de flesta av mina procedurer är optimerade.
+                <br>
+                <br>
+                Funktioner i databasen gör att logik kan sparas i en enda funktion och återanvändas i andra operationer
+                eller procedurer. De hjälper till att standardisera komplexa operationer och gör databehandlingen mer
+                effektiv och strukturerad.
+                <br>
+                <br>
+                Jag är nöjd med hur e-shopen har utvecklats. Det har varit lärorikt och mycket hjälpsamt att skapa
+                databasen och göra databasförfrågningar på olika nivåer, från att göra enkla SELECT-satser, till att
+                skapa vyer och transaktioner, samt att skriva procedurer och till och med funktioner för att presentera
+                data i ett mer användarvänligt format.
+
+                Jag ser att det finns förbättringspotential, till exempel genom ökad användning av funktioner för att
+                hantera komplexa procedurer. Dessutom kan funktionaliteten kring fakturor och betalningar utvecklas mer
+                för att göra systemet mer komplett.
+
+                Svårighetsgraden har varit lagom utmanande. Det krävde en del problemlösning, men var samtidigt givande
+                eftersom jag kunde tillämpa flera viktiga koncept inom SQL och databashantering.
+                <br>
+                <br>
+                Jag lade till tabeller för Faktura och FakturaProdukt, som kan användas för att skapa
+                betalningsfunktioner i eshoppen. Dessa tabeller är grundläggande för betalningshantering, men det krävs
+                mer arbete för att utveckla procedurer och funktioner för att integrera en betalningsfunktion i eshop. Just
+                nu är endast den grundläggande strukturen för betalningar på plats.
+
+                <br>
+                <br>
+                <strong>Min TIL för detta kmom:</strong> är att lära mig användning och skapande av funktioner, vilket
+                underlättar arbetet och gör det mer intressant att arbeta med SQL, eftersom man kan programmera
+                SQL-satser. Dessutom har jag lärt mig hur man använder index för att optimera databasens prestanda.
+
+
+            </p>
         </section>
         <br>
         <hr><br>
