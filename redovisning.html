@@ -359,7 +359,8 @@
                 <br>
                 Jag lade till tabeller för Faktura och FakturaProdukt, som kan användas för att skapa
                 betalningsfunktioner i eshoppen. Dessa tabeller är grundläggande för betalningshantering, men det krävs
-                mer arbete för att utveckla procedurer och funktioner för att integrera en betalningsfunktion i eshop. Just
+                mer arbete för att utveckla procedurer och funktioner för att integrera en betalningsfunktion i eshop.
+                Just
                 nu är endast den grundläggande strukturen för betalningar på plats.
 
                 <br>
@@ -376,22 +377,78 @@
 
         <section>
             <h2>Kmom07-10</h2>
-            <p>Här är redovisningstexten</p>
+            <p>
+                Jag tyckte om tentan eftersom alla kursmoment hjälpte mycket inför den. Jag skulle säga att tentan var
+                lätt och en mycket bra övning på det vi lärde oss under kursens gång. Övning på gamla tentor, samt
+                övningstentor och tentamen, var en bra träning för att först skapa databasen konceptuellt och sedan
+                logiskt. Dessutom fick jag öva på att implementera och hantera databaser med Express och JavaScript,
+                vilket var en extra fördel. Det gav mig även möjlighet att arbeta med CRUD-operationer i praktiska
+                sammanhang.
+                <br><br>
+                Det var en balansgång att hinna med allt inom tidsramen, vilket skapade en viss stress, men uppgifterna
+                var hanterbara och byggde på det vi lärde oss under kursen. Sammanlagt skapade jag sex databaser: en
+                skoldatabas, en e-handelsdatabas,en bankdatabas, en hunddatabas, en eldatabas samt en examensdatabas för
+                mineraler.
+                Genom att utveckla dessa databaser och arbeta med både frontend och backend för databashantering känner
+                jag mig mycket nöjd med resultatet.
+                <br><br>
+                Jag hade implementerat produktinläggning med add_produkt(), edit_produkt() och delete_produkt()
+                produkter i eShop del 1 och 2. För att uppfylla det första kravet behövde jag bygga vidare på dessa
+                procedurer. Jag lade
+                till logik för att lägga till produkter, som tidigare, men nu även i kategorier, lager och
+                lagerplats-tabeller. Jag implementerade även förslag jag fick under rättningen av kursmoment 5-6 och
+                finjusterade min kategori- och produktöversiktssida.
+                <br>
+                Dessutom skapade jag en get_categories()-funktion för att visa alla tillgängliga kategorier för kunden
+                att lägga produkter i, genom att använda checkboxes. Kunden kan nu välja vilken kategori den nya
+                produkten ska tillhöra, samt en extra textbox på sidorna för att lägga till eller redigera produkter,
+                där man även kan se hur många produkter som redan finns i lager. Det går också att direkt uppdatera
+                antalet produkter i lagret från samma sida. Efter korrigeringen hänger all information nu ihop på ett
+                bättre sätt.
+                <br><br>
+                För att implementera krav 2 hade jag redan implementerat logiken för att visa orderöversikten från
+                tidigare eShop-dela och använde generate_picklist()-proceduren för att visa plocklistan på webbklienten.
+                Jag skapade även en ny procedur som uppdaterade produkterna i lagret efter att ordern skickades,
+                nämligen update_lagerplats_antal(produktID, antal). Med hjälp av denna procedur uppdaterade jag
+                lagerplats- och lagertabellernas innehåll baserat på vilka produkter som skickades och deras antal.
+                <br><br>
+                När ordern skeppades, använde jag ship_order()-proceduren med POST-formulär för att minska antalet
+                produkter i lagret och markera att ordern skickats i orders-tabellen. Genom att använda if-satser i
+                proceduren, tillsammans med att höja ett felmeddelande om lagret inte räcker,
+                säkerställde jag att lagret inte blev negativt när en order skickades.
+                <br><br>
+                För att implementera krav 3 började jag med att skapa enkla procedurer som get_order_date() för att visa
+                datumet när ordern skickades, och get_order_by_id()-proceduren använde jag för att lägga till alla
+                orderrader på fakturasidan. Jag skapade även create_invoice_after_shipping()-triggern för att lägga till
+                fakturainformation i mellantabellen faktura_produkt. Dessutom skapade jag
+                get_faktura_by_orderid()-proceduren för att genom order-ID hitta och visa fakturainformation, genom att
+                göra en join mellan tabellerna faktura och faktura_produkt för att visa antal, pris per produkttyp och
+                det totala priset för hela fakturan, vilket beräknades i proceduren.
+                <br><br>
+                Projektet tog en rimlig tid att genomföra, men vissa delar krävde extra efterforskning, särskilt kring
+                hur man bäst hanterar databaskopplingar och implementerar CRUD-operationer. Det blev lite svårt att
+                hantera krav 3 och fixa hur ordern ska skickas, hur ordern ska uppdateras i databasen och hur fakturan
+                ska genereras. Men genom att bryta ner ett stort problem i mindre delproblem lyckades jag hitta en
+                effektiv lösning som jag har implementerat. Jag upplevde att strukturen i uppgiften var tydlig och att
+                det var en bra avslutning på kursen, där vi fick använda många av de tekniker vi lärt oss tidigare.
+                Projektet och tentamen tillsammans kändes överväldigande innan jag påbörjade det, då det verkade som en
+                stor arbetsbelastning. Men det gav resultat i slutändan, då den extra stressen ledde till ett bra
+                projekt och en tentamen som jag är nöjd med.
+                <br><br>
+                Jag tycker att kursen har varit lärorik och välutformad. Materialet har varit tydligt, från
+                databasguiden och dokumentation för MariaDB och MySQL, till genomförande av kursmomenten och slutförande
+                av projektet. Handledningen har varit hjälpsam och gav bra stöd under hela kursen. Ett
+                förbättringsförslag skulle vara att ge fler konkreta exempel på avancerade funktioner i e-shop,
+                såsom hantering av fakturor eller lageruppdateringar. Jag skulle rekommendera kursen till
+                andra och ger den ett betyg på 10/10.
+            </p>
         </section>
-
-        <!-- <footer>
-            <p>En footer till artikeln.</p>
-        </footer> -->
 
     </article>
 
-
-
     <script type="text/javascript" src="js/main.js"></script>
     <footer>
-        <p>
-            Denna webbplatsen är en del av kursen Databasteknologier för webben.
-        </p>
+        <p>Denna webbplatsen är en del av kursen Databasteknologier för webben.</p>
     </footer>
 </body>
 
